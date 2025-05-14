@@ -6,3 +6,4 @@ chromadb
 selenium
 pypdf
 langchain-community
+unstructured

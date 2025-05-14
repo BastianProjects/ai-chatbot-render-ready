@@ -7,3 +7,4 @@ selenium
 pypdf
 langchain-community
 unstructured
+webdriver_manager

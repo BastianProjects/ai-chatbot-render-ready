@@ -1,0 +1,8 @@
+
+services:
+  - type: web
+    name: ai-chatbot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run PDFEnhancedChatBot_WithVideoSupport.py
+    plan: free

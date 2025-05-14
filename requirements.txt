@@ -5,3 +5,4 @@ openai
 chromadb
 selenium
 pypdf
+langchain-community

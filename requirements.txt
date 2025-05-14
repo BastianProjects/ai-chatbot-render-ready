@@ -8,3 +8,4 @@ pypdf
 langchain-community
 unstructured
 webdriver_manager
+undetected_chromedriver

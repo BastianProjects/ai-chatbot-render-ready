@@ -10,19 +10,14 @@ from langchain.chat_models import ChatOpenAI
 from langchain.vectorstores import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import Document
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+import undetected_chromedriver as uc
 
-options = Options()
-options.binary_location = "/usr/bin/google-chrome"
+options = uc.ChromeOptions()
 options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 
-service = Service("/usr/local/bin/chromedriver")
-
-driver = webdriver.Chrome(service=service, options=options)
+driver = uc.Chrome(options=options)
 driver.get("https://www.google.com")
 print(driver.title)
 driver.quit()
